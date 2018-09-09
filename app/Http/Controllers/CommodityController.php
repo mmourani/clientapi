@@ -19,7 +19,7 @@ class CommodityController extends Controller
         $Body = $res->getBody();
         // '{"id": 1420053, "name": "guzzle", ...}'
         
-        return view('commodities.index', compact('StatusCode', 'Header', 'Body'));
+        return view('/', compact('StatusCode', 'Header', 'Body'));
     }
 
     public function show()

@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/', 'SystemController@ping');
+
 Route::get('/commodities', 'CommodityController@index');
 Route::get('/commodities/{commodity}', 'CommodityController@show');
 
